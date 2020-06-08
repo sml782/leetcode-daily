@@ -7,11 +7,11 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "启动程序",
+      "name": "ts-node",
       "skipFiles": [
         "<node_internals>/**"
       ],
-      "program": "${workspaceRoot}/node_modules/ts-node/dist/bin.js",
+      "program": "${workspaceRoot}/node_modules/.bin/ts-node",
       "outFiles": [
         "${workspaceFolder}/**/*.js"
       ],
@@ -20,6 +20,31 @@
       ],
       "cwd": "${workspaceRoot}",
       "protocol": "inspector"
+    },
+    {
+
+      "type": "node",
+      "request": "launch",
+      "name": "ts-node-dev",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "cwd": "${workspaceRoot}",
+      "protocol":"inspector",
+      "port": 9229,
+      "restart": true,
+      "program": "${workspaceRoot}/node_modules/ts-node-dev/bin/ts-node-dev",
+      "outFiles": [
+        "${workspaceFolder}/**/*.js"
+      ],
+      "internalConsoleOptions": "openOnSessionStart",
+      "args": [
+        "--inspect",
+        "--no-notify",
+        "--respawn",
+        "--transpileOnly",
+        "./src"
+      ]
     }
   ]
 }
