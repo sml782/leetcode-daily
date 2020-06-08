@@ -1,4 +1,4 @@
-import { twoSumFor1 } from '../1.tow-sum';
+import { twoSumFor1 } from '../../array/1.tow-sum';
 
 interface TestExp {
   input: [number[], number];
