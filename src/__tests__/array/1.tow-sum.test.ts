@@ -1,4 +1,4 @@
-import { twoSum1, twoSum2, twoSum3 } from '../1.tow-sum';
+import { twoSum1, twoSum2, twoSum3 } from '../../array/1.tow-sum';
 
 type TestExp =  [number[], number, number[]];
 
