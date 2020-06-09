@@ -17,45 +17,45 @@ export function findMedianSortedArrays(nums1: number[], nums2: number[]): number
 };
 
 // NOTE: 2.双指针
-export function findMedianSortedArrays1(nums1: number[], nums2: number[]): number {
-  const lens1 = nums1.length;
-  const lens2 = nums2.length;
-  const lens = lens1 + lens2;
-  const isEven = lens % 2 === 0;
-  const midIndex = Math.floor((isEven ? lens - 1 : lens) / 2);
-  debugger;
-  if (lens1 === 0 || lens2 === 0) {
-    const has0next = lens1 > 0 ? nums1 : nums2;
-    if (!isEven) {
-      return has0next[midIndex];
-    }
-    return (has0next[midIndex] + has0next[midIndex + 1]) / 2;
-  }
+// export function findMedianSortedArrays1(nums1: number[], nums2: number[]): number {
+//   const lens1 = nums1.length;
+//   const lens2 = nums2.length;
+//   const lens = lens1 + lens2;
+//   const isEven = lens % 2 === 0;
+//   const midIndex = Math.floor((isEven ? lens - 1 : lens) / 2);
+//   debugger;
+//   if (lens1 === 0 || lens2 === 0) {
+//     const has0next = lens1 > 0 ? nums1 : nums2;
+//     if (!isEven) {
+//       return has0next[midIndex];
+//     }
+//     return (has0next[midIndex] + has0next[midIndex + 1]) / 2;
+//   }
 
-  let index = 0;
-  let leftIndex = 0;
-  let rightIndex = 0;
-  let leftFlag: [number[], number] = [nums1, leftIndex];
-  let rightFlag: [number[], number] = [nums2, rightIndex];
-  while (index < midIndex) {
-    const leftnum = leftFlag[0][leftFlag[1]];
-    const rightnum = rightFlag[0][rightFlag[1]];
-    let mapNums = [];
-    let leftislessthan = false;
-    if (leftnum <= rightnum) {
-      if ()
-      leftislessthan = true;
-      mapNums = 
-    } else {
-      rightIndex++;
-    }
-    index++;
-  }
+//   let index = 0;
+//   let leftIndex = 0;
+//   let rightIndex = 0;
+//   let leftFlag: [number[], number] = [nums1, leftIndex];
+//   let rightFlag: [number[], number] = [nums2, rightIndex];
+//   while (index < midIndex) {
+//     const leftnum = leftFlag[0][leftFlag[1]];
+//     const rightnum = rightFlag[0][rightFlag[1]];
+//     let mapNums = [];
+//     let leftislessthan = false;
+//     if (leftnum <= rightnum) {
+//       if ()
+//       leftislessthan = true;
+//       mapNums = 
+//     } else {
+//       rightIndex++;
+//     }
+//     index++;
+//   }
 
-  const leftnum = nums1[leftIndex];
-  const rightnum = nums2[rightIndex];
-  if (!isEven) {
-    return Math.min(leftnum, rightnum);
-  }
-  return (leftnum + rightnum) / 2;
-};
+//   const leftnum = nums1[leftIndex];
+//   const rightnum = nums2[rightIndex];
+//   if (!isEven) {
+//     return Math.min(leftnum, rightnum);
+//   }
+//   return (leftnum + rightnum) / 2;
+// };
