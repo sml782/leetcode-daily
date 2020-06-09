@@ -1,3 +1,3 @@
-import { findMedianSortedArrays1 } from './array/4.find-median-sorted-arrays';
+import { removeDuplicates2 } from './array/26.remove-duplicates';
 
-findMedianSortedArrays1([1,2], [-1,3]);
+removeDuplicates2([1,1,2]);

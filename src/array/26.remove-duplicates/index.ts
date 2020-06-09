@@ -45,12 +45,13 @@ export function removeDuplicates1(nums: number[]): number {
   return smartIndex;
 };
 
-// 3.用一个变量记住上一次值, 防止多次取值
+// 3.用一个变量记住上一次值, 防止多次取值, Set 取最大值
 export function removeDuplicates2(nums: number[]): number {
   const lens = nums.length;
   if (lens <= 1) {
     return lens;
   }
+  const maxlen: number = new Set(nums).size;
   let maxNum = nums[0];
   let index = 1;
   let smartIndex = 1;
@@ -63,6 +64,9 @@ export function removeDuplicates2(nums: number[]): number {
     maxNum = item;
     nums[smartIndex++] = item;
     index++;
+    if (smartIndex === maxlen) {
+      return maxlen;
+    }
   }
-  return smartIndex;
+  return maxlen;
 };
