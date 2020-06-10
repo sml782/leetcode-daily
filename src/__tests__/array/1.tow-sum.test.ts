@@ -1,4 +1,4 @@
-import { twoSum1, twoSum2, twoSum3 } from '../../array/1.tow-sum';
+import { twoSum1, twoSum2, twoSum3 } from '../../array/1.two-sum';
 
 type TestExp =  [number[], number, number[]];
 
@@ -7,7 +7,7 @@ const testList: TestExp[] = [
   [[3,2,4], 6, [1, 2]],
 ];
 
-describe('两数字之和', () => {
+describe('1.[Array]两数字之和', () => {
   // 双层 for 循环
   describe('双层 for 循环', () => {
     test.each(testList)('(%o, %i): %o', (nums, target, res) => {

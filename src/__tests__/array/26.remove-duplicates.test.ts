@@ -7,7 +7,7 @@ const testList: TestExp[] = [
   [[0,0,1,1,1,2,2,3,3,4], 5],
 ];
 
-describe('删除排序数组中的重复项', () => {
+describe('26.[Array]删除排序数组中的重复项', () => {
   // 1.splice 删除, 删除一个会让后面元素都往前移动
   describe('splice 删除, 删除一个会让后面元素都往前移动', () => {
     test.each(testList)('(%o): %i', (nums, res) => {

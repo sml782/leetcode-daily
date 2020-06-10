@@ -43,7 +43,7 @@
         "--no-notify",
         "--respawn",
         "--transpileOnly",
-        "${workspaceRoot}/src"
+        "${workspaceRoot}/src/index.ts"
       ]
     }
   ]

@@ -1,3 +1,3 @@
-import { removeDuplicates2 } from './array/26.remove-duplicates';
+import { removeElement1 } from './array/27.remove-element';
 
-removeDuplicates2([1,1,2]);
+removeElement1([0,1,2,2,3,0,4,2], 2);

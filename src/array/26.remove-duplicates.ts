@@ -1,4 +1,4 @@
-// 1.splice 删除, 删除一个会让后面元素都往前移动
+// NOTE: 1.splice 删除, 删除一个会让后面元素都往前移动
 export function removeDuplicates(nums: number[]): number {
   let lens = nums.length;
   if (lens <= 1) {
@@ -22,7 +22,7 @@ export function removeDuplicates(nums: number[]): number {
   return lens;
 };
 
-// 2.数组内部等
+// NOTE: 2.数组内部等
 export function removeDuplicates1(nums: number[]): number {
   const lens = nums.length;
   if (lens <= 1) {
