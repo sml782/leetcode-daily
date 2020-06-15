@@ -50,10 +50,9 @@ export function twoSum3 (nums: number[], target: number): number[] {
     const leftNum = nums[i];
     const lastNum = target - leftNum;
     if (numWeek.has(lastNum)) {
-      return [Math.min.apply(null, numWeek.get(lastNum)), i];
+      return [numWeek.get(lastNum), i];
     }
-    const lastIndexs = numWeek.get(lastNum) || [];
-    numWeek.set(leftNum, lastIndexs.concat(i));
+    numWeek.set(leftNum, i);
     i++;
   }
   return [];
