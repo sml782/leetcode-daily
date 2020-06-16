@@ -10,7 +10,7 @@
 export function removeElement(nums: number[], val: number): number {
   let lens = nums.length;
   if (nums.length === 0 || !nums.includes(val)) {
-    return nums.length;
+    return lens;
   }
   let index = 0;
   while (index < lens) {
@@ -31,7 +31,6 @@ export function removeElement1(nums: number[], val: number): number {
   if (lens === 0) {
     return lens;
   }
-  debugger;
   let index = 0;
   let newIndex = 0;
   while (index < lens) {
