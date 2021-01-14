@@ -1,3 +1,3 @@
-import { longestCommonPrefix1 } from './array/14.longest-common-prefix';
+import { replaceSpace1 } from './sword-refers-to-offer/5.replace-space';
 
-longestCommonPrefix1(['acc','aaa','aaba']);
+replaceSpace1('We are happy.');
