@@ -23,5 +23,27 @@ export function findRepeatNumber(nums: number[]): number {
     }
     return num;
   }
-  return nums[0];
+  return -1;
+};
+
+
+/**
+ * NOTE: 原地算法，利用相同索引可能对应多个值来判断
+ * 
+ * 遍历中，第一次遇到数字 x 时，将其交换至索引 x 处;
+ * 而当第二次遇到数字 x 时，一定有 nums[x] = xnums[x] = x ，此时即可得到一组重复数字
+ */
+export function findRepeatNumber1(nums: number[]): number {
+  let index = 0;
+  while (index < nums.length) {
+    if (nums[index] === index) {
+      index++;
+      continue;
+    }
+    if (nums[nums[index]] === nums[index]) {
+      return nums[index];
+    }
+    [nums[nums[index]], nums[index]] = [nums[index], nums[nums[index]]];
+  }
+  return -1;
 };
