@@ -1,3 +1,5 @@
-import { replaceSpace1 } from './sword-refers-to-offer/5.replace-space';
+import { fib1 } from './sword-refers-to-offer/10.fibonacc';
 
-replaceSpace1('We are happy.');
+const res = fib1(5);
+
+console.log(res);
