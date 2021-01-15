@@ -1,5 +1,5 @@
-import { fib1 } from './sword-refers-to-offer/10.fibonacc';
+import { minArray } from './sword-refers-to-offer/11.min-array';
 
-const res = fib1(5);
+const res = minArray([10,1,10,10,10]);
 
 console.log(res);
