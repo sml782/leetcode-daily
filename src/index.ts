@@ -1,5 +1,8 @@
-import { minArray } from './sword-refers-to-offer/11.min-array';
+import { findNumberIn2DArray } from './sword-refers-to-offer/4.find-number-in-2d-array';
 
-const res = minArray([10,1,10,10,10]);
+const res = findNumberIn2DArray(
+  [[-1,3]],
+3
+);
 
 console.log(res);
