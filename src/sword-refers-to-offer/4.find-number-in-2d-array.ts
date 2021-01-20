@@ -40,3 +40,34 @@ export function findNumberIn2DArray(matrix: number[][], target: number): boolean
   // 没找到
   return false;
 };
+
+/**
+ * NOTE: 直接找规律吧
+ * 
+ * 现在第一行找最后一个元素 x，如果 x > target，往前找到比他小或者等于，如果有则进行下一行；
+ * 反之从下一行开始进行 1。
+ * 
+ */
+export function findNumberIn2DArray1(matrix: number[][], target: number): boolean {
+  if (matrix.length === 0 || matrix[0].length === 0) {
+    return false;
+  }
+
+  let lineIndex = 0;
+  while (lineIndex < matrix.length) {
+    const line = matrix[lineIndex];
+    for (let idx = line.length - 1; idx >= 0; idx--) {
+      if (line[idx] > target) {
+        continue;
+      }
+      if (line[idx] === target) {
+        return true;
+      }
+      break;
+    }
+    lineIndex++;
+  }
+
+  // 没找到
+  return false;
+};

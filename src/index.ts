@@ -1,8 +1,8 @@
-import { findNumberIn2DArray } from './sword-refers-to-offer/4.find-number-in-2d-array';
+import { findNumberIn2DArray1 } from './sword-refers-to-offer/4.find-number-in-2d-array';
 
-const res = findNumberIn2DArray(
-  [[-1,3]],
-3
+const res = findNumberIn2DArray1(
+  [[-5]],
+-5
 );
 
 console.log(res);
