@@ -71,3 +71,37 @@ export function findNumberIn2DArray1(matrix: number[][], target: number): boolea
   // 没找到
   return false;
 };
+
+
+/**
+ * NOTE: 直接找规律吧 2
+ * 
+ * 单层循环，时间复杂度优化
+ * 
+ * 现在第一行找最后一个元素 x，如果 x > target，往前找到比他小或者等于，如果有则进行下一行；
+ * 反之从下一行开始进行 1。
+ * 
+ */
+export function findNumberIn2DArray2(matrix: number[][], target: number): boolean {
+  if (matrix.length === 0 || matrix[0].length === 0) {
+    return false;
+  }
+
+  let rowIdx = 0;
+  let columnIdx = matrix[0].length - 1;
+  
+  while (rowIdx < matrix.length && columnIdx >= 0) {
+    const curNum = matrix[rowIdx][columnIdx];
+    if (curNum === target) {
+      return true;
+    }
+    if (curNum > target) {
+      columnIdx--;
+      continue;
+    }
+    rowIdx++;
+  }
+
+  // 没找到
+  return false;
+};
