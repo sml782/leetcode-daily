@@ -1,5 +1,5 @@
-import { printNumbers } from './sword-refers-to-offer/17.print-numbers';
+import { exchange } from './sword-refers-to-offer/21.exchange-number';
 
-const res = printNumbers(2);
+const res = exchange([1,2,3,4]);
 
 console.log(res);
