@@ -1,5 +1,5 @@
-import { isNumber } from './sword-refers-to-offer/20.is-number';
+import { printNumbers } from './sword-refers-to-offer/17.print-numbers';
 
-const res = isNumber('46.e3');
+const res = printNumbers(2);
 
 console.log(res);
