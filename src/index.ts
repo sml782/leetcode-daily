@@ -1,5 +1,6 @@
-import { exchange } from './sword-refers-to-offer/21.exchange-number';
+import { reverseList, createListNode } from './sword-refers-to-offer/24.reverse-list';
 
-const res = exchange([1,2,3,4]);
+const head = createListNode();
+const res = reverseList(head);
 
-console.log(res);
+console.dir(res);
