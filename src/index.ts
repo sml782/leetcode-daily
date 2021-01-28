@@ -1,8 +1,5 @@
-import { findNumberIn2DArray1 } from './sword-refers-to-offer/4.find-number-in-2d-array';
+import { isNumber } from './sword-refers-to-offer/20.is-number';
 
-const res = findNumberIn2DArray1(
-  [[-5]],
--5
-);
+const res = isNumber('46.e3');
 
 console.log(res);
