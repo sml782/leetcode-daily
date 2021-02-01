@@ -1,7 +1,5 @@
-import { reverseList } from './sword-refers-to-offer/24.reverse-list';
-import { createListNode } from './lib/linked-list';
+import { spiralOrder } from './sword-refers-to-offer/29.spiral-order';
 
-const head = createListNode();
-const res = reverseList(head);
+const res = spiralOrder([[1,2],[3,4]]);
 
 console.dir(res);
