@@ -1,5 +1,5 @@
-import { spiralOrder } from './sword-refers-to-offer/29.spiral-order';
+import { majorityElement1 } from './sword-refers-to-offer/39.majority-element';
 
-const res = spiralOrder([[1,2],[3,4]]);
+const res = majorityElement1([1,2,2,1,124,6]);
 
 console.dir(res);
