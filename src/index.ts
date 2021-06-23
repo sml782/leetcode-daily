@@ -1,5 +1,5 @@
-import { majorityElement1 } from './sword-refers-to-offer/39.majority-element';
+import { findNthDigit } from './sword-refers-to-offer/44.find-nth-digit';
 
-const res = majorityElement1([1,2,2,1,124,6]);
+const res = findNthDigit(11);
 
 console.dir(res);
