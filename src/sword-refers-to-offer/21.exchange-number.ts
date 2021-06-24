@@ -9,9 +9,11 @@
  * 输出：[1,3,2,4] 
  * 注：[3,1,2,4] 也是正确的答案之一。
  * 
- * 提示：
+ * @limit
  * 1 <= nums.length <= 50000
  * 1 <= nums[i] <= 10000
+ * 
+ * @see https://leetcode-cn.com/problems/diao-zheng-shu-zu-shun-xu-shi-qi-shu-wei-yu-ou-shu-qian-mian-lcof/
  */
 
 export function exchange(nums: number[]): number[] {

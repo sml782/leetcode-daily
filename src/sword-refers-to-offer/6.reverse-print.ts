@@ -7,8 +7,9 @@
  * 输入：head = [1,3,2]
  * 输出：[2,3,1]
  * 
- * 限制：
- * 0 <= 链表长度 <= 10000
+ * @limit 0 <= 链表长度 <= 10000
+ * 
+ * @see https://leetcode-cn.com/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof/
  */
 
 /**

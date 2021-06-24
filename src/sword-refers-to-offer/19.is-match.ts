@@ -43,6 +43,8 @@
  * 
  * s 可能为空，且只包含从 a-z 的小写字母。
  * p 可能为空，且只包含从 a-z 的小写字母以及字符 . 和 *，无连续的 '*'。
+ * 
+ * @see https://leetcode-cn.com/problems/zheng-ze-biao-da-shi-pi-pei-lcof/
  */
 
 

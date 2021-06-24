@@ -24,8 +24,9 @@
  * 输入：root = [1,2,2,null,3,null,3]
  * 输出：false
  * 
- * 限制：
- * 0 <= 节点个数 <= 1000
+ * @limit 0 <= 节点个数 <= 1000
+ * 
+ * @see https://leetcode-cn.com/problems/dui-cheng-de-er-cha-shu-lcof/
  */
 
 

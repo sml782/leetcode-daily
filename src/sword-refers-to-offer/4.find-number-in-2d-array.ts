@@ -16,9 +16,11 @@
  * 给定 target = 5，返回 true。
  * 给定 target = 20，返回 false。
  * 
- * 限制：
+ * @limit
  * 0 <= n <= 1000
  * 0 <= m <= 1000
+ * 
+ * @see https://leetcode-cn.com/problems/er-wei-shu-zu-zhong-de-cha-zhao-lcof/
  */
 
 

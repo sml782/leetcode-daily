@@ -17,8 +17,9 @@
  * 输入：n = 0
  * 输出：1
  * 
- * 提示：
- * 0 <= n <= 100
+ * @limit 0 <= n <= 100
+ * 
+ * @see https://leetcode-cn.com/problems/qing-wa-tiao-tai-jie-wen-ti-lcof/
  */
 
 

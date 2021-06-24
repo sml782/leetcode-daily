@@ -12,9 +12,11 @@
  * 输入：arr = [0,1,2,1], k = 1
  * 输出：[0]
  * 
- * 限制：
+ * @limit
  * 0 <= k <= arr.length <= 10000
  * 0 <= arr[i] <= 10000
+ * 
+ * @see https://leetcode-cn.com/problems/zui-xiao-de-kge-shu-lcof/
  */
 
 

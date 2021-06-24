@@ -15,8 +15,9 @@
  *   /  \
  *  15   7
  * 
- * 限制：
- * 0 <= 节点个数 <= 5000
+ * @limit 0 <= 节点个数 <= 5000
+ * 
+ * @see https://leetcode-cn.com/problems/zhong-jian-er-cha-shu-lcof/
  */
 
 class TreeNode {

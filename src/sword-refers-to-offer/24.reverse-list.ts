@@ -7,8 +7,9 @@
  * 输入: 1->2->3->4->5->NULL
  * 输出: 5->4->3->2->1->NULL
  * 
- * 限制：
- * 0 <= 节点个数 <= 5000
+ * @limit 0 <= 节点个数 <= 5000
+ * 
+ * @see https://leetcode-cn.com/problems/fan-zhuan-lian-biao-lcof/
  */
 
 

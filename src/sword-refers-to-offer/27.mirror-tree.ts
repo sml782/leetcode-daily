@@ -20,8 +20,9 @@
  * 输入：root = [4,2,7,1,3,6,9]
  * 输出：[4,7,2,9,6,3,1]
  * 
- * 限制：
- * 0 <= 节点个数 <= 1000
+ * @limit 0 <= 节点个数 <= 1000
+ * 
+ * @see https://leetcode-cn.com/problems/er-cha-shu-de-jing-xiang-lcof/
  */
 
 /**

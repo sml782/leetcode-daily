@@ -17,8 +17,9 @@
  * 输入：n = 5
  * 输出：5
  * 
- * 提示：
- * 0 <= n <= 100
+ * @limit 0 <= n <= 100
+ * 
+ * @see https://leetcode-cn.com/problems/fei-bo-na-qi-shu-lie-lcof/
  */
 
 

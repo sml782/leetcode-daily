@@ -9,6 +9,8 @@
  * @example 示例 1
  * 输入：[2, 3, 1, 0, 2, 5, 3]
  * 输出：2 或 3 
+ * 
+ * @see https://leetcode-cn.com/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof/
  */
 
 

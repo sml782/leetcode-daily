@@ -8,8 +8,9 @@
  * 输入: [1, 2, 3, 2, 2, 2, 5, 4, 2]
  * 输出: 2
  * 
- * 限制：
- * 1 <= 数组长度 <= 50000
+ * @limit 1 <= 数组长度 <= 50000
+ * 
+ * @see https://leetcode-cn.com/problems/shu-zu-zhong-chu-xian-ci-shu-chao-guo-yi-ban-de-shu-zi-lcof/
  */
 
 

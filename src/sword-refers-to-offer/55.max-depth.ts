@@ -12,8 +12,9 @@
  *    15   7
  * 返回它的最大深度 3 。
  * 
- * @tip
- * 1. 节点总数 <= 10000
+ * @limit 节点总数 <= 10000
+ * 
+ * @see https://leetcode-cn.com/problems/er-cha-shu-de-shen-du-lcof/
  */
 
 /**

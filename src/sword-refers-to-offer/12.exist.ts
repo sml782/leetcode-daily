@@ -25,9 +25,11 @@
  * 输出：
  * false
  * 
- * 提示：
+ * @limit
  * 1 <= board.length <= 200
  * 1 <= board[i].length <= 200
+ * 
+ * @see https://leetcode-cn.com/problems/ju-zhen-zhong-de-lu-jing-lcof/
  */
 
 

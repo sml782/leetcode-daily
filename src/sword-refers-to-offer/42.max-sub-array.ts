@@ -9,9 +9,11 @@
  * 输出: 6
  * 解释: 连续子数组 [4,-1,2,1] 的和最大，为 6。
  * 
- * 提示：
+ * @limit
  * 1 <= arr.length <= 10^5
  * -100 <= arr[i] <= 100
+ * 
+ * @see https://leetcode-cn.com/problems/lian-xu-zi-shu-zu-de-zui-da-he-lcof/
  */
 
 

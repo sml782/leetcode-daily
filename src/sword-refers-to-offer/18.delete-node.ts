@@ -18,6 +18,8 @@
  * 说明：
  * 题目保证链表中节点的值互不相同
  * 若使用 C 或 C++ 语言，你不需要 free 或 delete 被删除的节点
+ * 
+ * @see https://leetcode-cn.com/problems/shan-chu-lian-biao-de-jie-dian-lcof/
  */
 
 /**

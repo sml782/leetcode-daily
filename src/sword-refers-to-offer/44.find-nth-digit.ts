@@ -13,8 +13,9 @@
  * 输入：n = 11
  * 输出：0
  * 
- * 提示：
- * 0 <= n < 2^31
+ * @limit 0 <= n < 2^31
+ * 
+ * @see https://leetcode-cn.com/problems/shu-zi-xu-lie-zhong-mou-yi-wei-de-shu-zi-lcof/
  */
 
 
