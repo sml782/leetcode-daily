@@ -18,13 +18,58 @@
  */
 
 
-
+/**
+ * 暴力
+ *
+ * @export
+ * @param {number} n
+ * @returns {number}
+ */
 export function findNthDigit(n: number): number {
   let curLen = 0;
   let curIndex = 0;
 
   if (n === 0) {
     return 0;
+  }
+
+  while (curLen < n + 1) {
+    const len = curIndex.toString().length;
+    curLen += len;
+    curIndex++;
+  }
+
+  const curString = (curIndex - 1).toString();
+  let lastIndex = curString.length - 1;
+
+  while (lastIndex > 0) {
+    if (curLen === n + 1) {
+      return Number(curString[lastIndex]);
+    }
+    curLen--;
+    lastIndex--;
+  }
+
+  return Number(curString[0]);
+};
+
+/**
+ * 分个位数、十位数、百位数
+ *
+ * @export
+ * @param {number} n
+ * @returns {number}
+ */
+export function findNthDigit1(n: number): number {
+  let curLen = 0;
+  let curIndex = 0;
+
+  if (n === 0) {
+    return 0;
+  }
+
+  if (n < ) {
+
   }
 
   while (curLen < n + 1) {

@@ -1,5 +1,5 @@
-import { findNthDigit } from './sword-refers-to-offer/44.find-nth-digit';
+import { findContinuousSequence } from './sword-refers-to-offer/57.find-continuous-sequence';
 
-const res = findNthDigit(11);
+const res = findContinuousSequence(9);
 
 console.dir(res);
