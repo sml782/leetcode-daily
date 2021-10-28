@@ -8,22 +8,21 @@
  * 给你 n ，请计算 F(n) 。
  * 
  * @example 1
- * 
  * 输入：2
  * 输出：1
  * 解释：F(2) = F(1) + F(0) = 1 + 0 = 1
  * 
  * @example 2
- * 
  * 输入：3
  * 输出：2
  * 解释：F(3) = F(2) + F(1) = 1 + 1 = 2
  * 
  * @example 3
- * 
  * 输入：4
  * 输出：3
  * 解释：F(4) = F(3) + F(2) = 2 + 1 = 3
+ * 
+ * @see https://leetcode-cn.com/problems/fibonacci-number/
  */
 
 /**

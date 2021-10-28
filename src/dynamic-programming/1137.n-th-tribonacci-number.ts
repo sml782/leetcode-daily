@@ -1,11 +1,3 @@
-/*
- * @Author: your name
- * @Date: 2021-10-27 20:55:57
- * @LastEditTime: 2021-10-27 21:09:55
- * @LastEditors: Please set LastEditors
- * @Description: In User Settings Edit
- * @FilePath: /leetcode-daily/src/dynamic-programming/1137.n-th-tribonacci-number.ts
- */
 /**
  * DP 1137. 第 N 个泰波那契数
  * 
@@ -14,7 +6,6 @@
  * 给你整数 n，请返回第 n 个泰波那契数 Tn 的值。
  * 
  * @example 1
- * 
  * 输入：n = 4
  * 输出：4
  * 解释：
@@ -22,7 +13,6 @@
  * T_4 = 1 + 1 + 2 = 4
  * 
  * @example 2
- * 
  * 输入：n = 25
  * 输出：1389537
  * 
@@ -30,6 +20,8 @@
  * 
  * 0 <= n <= 37
  * 答案保证是一个 32 位整数，即 answer <= 2^31 - 1。
+ * 
+ * @see https://leetcode-cn.com/problems/n-th-tribonacci-number/
  */
 
 
