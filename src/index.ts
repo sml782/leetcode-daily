@@ -1,9 +1,9 @@
 // import { lastRemaining } from './sword-refers-to-offer/62.last-remaining';
-import { minCostClimbingStairs } from './dynamic-programming/746.min-cost-climbing-stairs';
+import { rob2 } from './dynamic-programming/213.house-robber-ii';
 // import { generateBT } from './lib/binary-tree';
 
 // const bt = generateBT([3,4,5,-7,-6,null,null,-7,null,-5,null,null,null,-4]);
 
-const res = minCostClimbingStairs([10,15,20]);
+const res = rob2([1, 2]);
 
 console.dir(res);
