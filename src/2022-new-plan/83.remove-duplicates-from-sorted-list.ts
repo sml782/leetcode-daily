@@ -31,7 +31,7 @@ export function deleteDuplicates(head: ListNode | null): ListNode | null {
   while (currentHead.next) {
     const nextHead: ListNode | null = currentHead.next;
     if (currentHead.val === nextHead.val) {
-      currentHead.next === nextHead.next;
+      currentHead.next = nextHead.next;
       nextHead.next = null;
       continue;
     }
