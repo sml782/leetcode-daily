@@ -20,3 +20,18 @@ export function createListNode(): ListNode {
   }
   return head;
 }
+
+/**
+ * 根据数组创建链表
+ * 
+ * @param {any} arrList
+ * @return {ListNode | null}
+ */
+export function createListNodeByArray(arrList: any[]): ListNode | null {
+  return arrList.reduceRight<ListNode | null>((prevValue, item, index) => {
+    if (index === arrList.length - 1) {
+      return new ListNode(item);
+    }
+    return new ListNode(item, prevValue);
+  }, null);
+}
