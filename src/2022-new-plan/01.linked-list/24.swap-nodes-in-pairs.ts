@@ -53,8 +53,7 @@ export function swapPairs1(head: ListNode | null): ListNode | null {
     return head;
   }
 
-  const newHead = new ListNode(0);
-  newHead.next = head;
+  const newHead = new ListNode(0, head);
   let tempNode: ListNode | null = newHead;
 
   while (tempNode?.next && tempNode?.next?.next) {

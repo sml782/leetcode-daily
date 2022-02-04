@@ -52,8 +52,12 @@ export function rotateRight(head: ListNode | null, k: number): ListNode | null {
     moveIndex--;
   }
 
-  const newHead = currentNode?.next;
-  currentNode!.next = null;
+  if (!currentNode) {
+    return head;
+  }
 
-  return newHead!;
+  const newHead = currentNode.next;
+  currentNode.next = null;
+
+  return newHead;
 };
