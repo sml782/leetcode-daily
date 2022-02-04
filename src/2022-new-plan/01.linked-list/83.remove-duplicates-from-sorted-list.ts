@@ -21,8 +21,14 @@
 
 import { ListNode } from '../../lib/linked-list';
 
+/**
+ * 循环暴力破解
+ * 
+ * @param {ListNode | null} head
+ * @return {ListNode | null}
+ */
 export function deleteDuplicates(head: ListNode | null): ListNode | null {
-  if (!head) {
+  if (!head || !head.next) {
     return head;
   }
 
@@ -40,4 +46,32 @@ export function deleteDuplicates(head: ListNode | null): ListNode | null {
   }
 
   return head;
+};
+
+/**
+ * 双指针
+ * 
+ * @param {ListNode | null} head
+ * @return {ListNode | null}
+ */
+export function deleteDuplicates1(head: ListNode | null): ListNode | null {
+  if (!head || !head.next) {
+    return head;
+  }
+
+  const newHead = new ListNode(0, head);
+  let prevNode: ListNode | null = newHead;
+  let curNode: ListNode | null = newHead.next;
+
+  while (prevNode && curNode) {
+    if (prevNode.val === curNode.val) {
+      curNode = curNode.next;
+      prevNode.next = curNode;
+      continue;
+    }
+
+    [prevNode, curNode] = [prevNode?.next, curNode.next];
+  }
+
+  return newHead.next;
 };
