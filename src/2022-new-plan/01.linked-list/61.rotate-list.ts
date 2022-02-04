@@ -19,7 +19,7 @@
  * @see https://leetcode-cn.com/problems/rotate-list/
  */
 
-import { ListNode } from '../lib/linked-list';
+import { ListNode } from '../../lib/linked-list';
 
 /**
  * 把链表连成环

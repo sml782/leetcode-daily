@@ -25,7 +25,7 @@
  * @see https://leetcode-cn.com/problems/reverse-linked-list/
  */
 
-import { ListNode } from '../lib/linked-list';
+import { ListNode } from '../../lib/linked-list';
 
 /**
  * 递归实现

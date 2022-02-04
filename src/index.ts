@@ -3,7 +3,7 @@
 // import { generateBT } from './lib/binary-tree';
 // import { createListNodeByArray } from './lib/linked-list';
 
-import { isHappy1 } from './2022-new-plan/202.happy-number';
+import { isHappy1 } from './2022-new-plan/01.linked-list/202.happy-number';
 
 // const bt = generateBT([3,4,5,-7,-6,null,null,-7,null,-5,null,null,null,-4]);
 

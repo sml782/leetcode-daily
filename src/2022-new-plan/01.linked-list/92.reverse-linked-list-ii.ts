@@ -21,7 +21,7 @@
  * @see https://leetcode-cn.com/problems/reverse-linked-list-ii/
  */
 
-import { ListNode } from '../lib/linked-list';
+import { ListNode } from '../../lib/linked-list';
 
 function reverseList(head: ListNode | null): ListNode | null {
   if (!head) {

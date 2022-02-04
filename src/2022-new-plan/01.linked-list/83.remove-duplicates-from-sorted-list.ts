@@ -19,7 +19,7 @@
  * @see https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list/
  */
 
-import { ListNode } from '../lib/linked-list';
+import { ListNode } from '../../lib/linked-list';
 
 export function deleteDuplicates(head: ListNode | null): ListNode | null {
   if (!head) {

@@ -21,7 +21,7 @@
  * 0 <= Node.val <= 100
  */
 
-import { ListNode } from '../lib/linked-list';
+import { ListNode } from '../../lib/linked-list';
 
 /**
  * 递归实现

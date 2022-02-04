@@ -24,7 +24,7 @@
  * @see https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/
  */
 
-import { ListNode } from '../lib/linked-list';
+import { ListNode } from '../../lib/linked-list';
 
 /**
  * 利用长度求位置
