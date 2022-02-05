@@ -31,6 +31,19 @@
  * @see https://leetcode-cn.com/problems/buddy-strings/
  */
 
+/**
+ * 分 2 种情况判断
+ * 
+ * 1.两个字符串相等，那就看看里面有没有 2 个字母相等
+ * 2.两个字符串不相等，那就看看里面有没有 2 个字母不相等
+ *   - 有 2 个以下或者以上不相等，直接就不是
+ *   - 有 2 个相等，看看这两个是否交叉相等
+ *
+ * @export
+ * @param {string} s
+ * @param {string} goal
+ * @return {*}  {boolean}
+ */
 export function buddyStrings(s: string, goal: string): boolean {
   if (s.length !== goal.length) {
     return false;
