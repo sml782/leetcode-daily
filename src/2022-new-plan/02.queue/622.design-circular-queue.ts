@@ -75,7 +75,7 @@ export class MyCircularQueue {
    *
    * @memberof MyCircularQueue
    */
-  private size = 0;
+  public size = 0;
 
   constructor(k: number) {
     this.maxLength = k;
@@ -172,7 +172,7 @@ export class MyCircularQueue {
  * @param {string[]} operationList 操作函数列表
  * @param {any[]} paramList 实际参数列表
  */
-export function testQueue<T>(operationList: ('MyCircularQueue' | keyof MyCircularQueue)[], paramList: number[][]) {
+export function testQueue<T>(operationList: ('MyCircularQueue' | Exclude<keyof MyCircularQueue, 'size'>)[], paramList: number[][]) {
   if (operationList.length !== paramList.length) {
     throw new Error('操作函数列表与实际参数不匹配');
   }
