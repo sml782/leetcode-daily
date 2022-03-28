@@ -2,7 +2,7 @@
 // import { rob2 } from './dynamic-programming/213.house-robber-ii';
 // import { generateBT } from './lib/binary-tree';
 // import { createListNodeByArray } from './lib/linked-list';
-import { isValid } from './string/20.valid-parentheses';
+import { maxProfit } from './array/121.best-time-to-buy-and-sell-stock';
 
 // import { lemonadeChange } from './2022-new-plan/860.lemonade-change';
 
@@ -10,6 +10,6 @@ import { isValid } from './string/20.valid-parentheses';
 
 // const head = createListNodeByArray([1, 2]);
 
-const res = isValid('()');
+const res = maxProfit([2,4,1]);
 
 console.dir(res);
