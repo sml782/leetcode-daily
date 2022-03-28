@@ -11,7 +11,8 @@
       "skipFiles": [
         "<node_internals>/**"
       ],
-      "program": "${workspaceRoot}/node_modules/.bin/ts-node",
+      // "program": "${workspaceRoot}/node_modules/.bin/ts-node",
+      "program": "${workspaceRoot}/node_modules/ts-node/dist/bin.js",
       "outFiles": [
         "${workspaceFolder}/**/*.js"
       ],
