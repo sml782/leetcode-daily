@@ -50,6 +50,9 @@ export function findDisappearedNumbers(nums: number[]): number[] {
 
 /**
  * 不使用额外空间
+ * 
+ * 1.所有数字真实所在位置增长度
+ * 2.所有未加过长度的 index+1 就是没有的
  *
  * @export
  * @param {number[]} nums
