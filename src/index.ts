@@ -2,7 +2,7 @@
 // import { rob2 } from './dynamic-programming/213.house-robber-ii';
 // import { generateBT } from './lib/binary-tree';
 // import { createListNodeByArray } from './lib/linked-list';
-import { findDisappearedNumbers1 } from './top100/448.find-all-numbers-disappeared-in-an-array';
+import { trap } from './top100/42.trapping-rain-water';
 
 // import { lemonadeChange } from './2022-new-plan/860.lemonade-change';
 
@@ -10,6 +10,6 @@ import { findDisappearedNumbers1 } from './top100/448.find-all-numbers-disappear
 
 // const head = createListNodeByArray([1, 2]);
 
-const res = findDisappearedNumbers1([4,3,2,7,8,2,3,1]);
+const res = trap([0,1,0,2,1,0,1,3,2,1,2,1]);
 
 console.dir(res);
