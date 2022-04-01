@@ -2,7 +2,7 @@
 // import { rob2 } from './dynamic-programming/213.house-robber-ii';
 // import { generateBT } from './lib/binary-tree';
 // import { createListNodeByArray } from './lib/linked-list';
-import { lengthOfLongestSubstring } from './top100/3.longest-substring-without-repeating-characters';
+import { letterCombinations } from './top100/17.letter-combinations-of-a-phone-number';
 
 // import { lemonadeChange } from './2022-new-plan/860.lemonade-change';
 
@@ -10,6 +10,6 @@ import { lengthOfLongestSubstring } from './top100/3.longest-substring-without-r
 
 // const head = createListNodeByArray([1, 2]);
 
-const res = lengthOfLongestSubstring('abc');
+const res = letterCombinations('23');
 
 console.dir(res);
