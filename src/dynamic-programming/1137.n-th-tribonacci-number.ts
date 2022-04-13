@@ -34,7 +34,7 @@
  * @param {number} n
  * @returns {number}
  */
-export function tribonacci(n: number): number {
+export function tribonacci(n: number, historyList = new Map<number, number>()): number {
   if (n < 2) {
     return n;
   }
@@ -43,7 +43,14 @@ export function tribonacci(n: number): number {
     return 1;
   }
 
-  return tribonacci(n - 1) + tribonacci(n - 2) + tribonacci(n - 3);
+  if (historyList.has(n)) {
+    return historyList.get(n) || 0;
+  }
+
+  const result = tribonacci(n - 1, historyList) + tribonacci(n - 2, historyList) + tribonacci(n - 3, historyList);
+  historyList.set(n, result);
+
+  return result;
 };
 
 /**

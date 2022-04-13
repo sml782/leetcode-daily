@@ -32,11 +32,19 @@
  * @param {number} n
  * @returns {number}
  */
-export function fib(n: number): number {
+export function fib(n: number, historyList = new Map<number, number>()): number {
   if (n < 2) {
     return n;
   }
-  return fib(n - 1) + fib(n - 2);
+
+  if (historyList.has(n)) {
+    return historyList.get(n) || 0;
+  }
+
+  const result = fib(n - 1, historyList) + fib(n - 2, historyList);
+  historyList.set(n, result);
+
+  return result;
 };
 
 
