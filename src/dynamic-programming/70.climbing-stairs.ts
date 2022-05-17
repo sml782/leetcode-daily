@@ -30,12 +30,19 @@
  * @param {number} n
  * @returns {number}
  */
-export function climbStairs(n: number): number {
+export function climbStairs(n: number, historyList = new Map<number, number>()): number {
   if (n <= 2) {
     return n;
   }
 
-  return climbStairs(n - 1) + climbStairs(n - 2);
+  if (historyList.has(n)) {
+    return historyList.get(n) || 0;
+  }
+
+  const result = climbStairs(n - 1, historyList) + climbStairs(n - 2, historyList);
+  historyList.set(n, result);
+
+  return result;
 };
 
 /**
