@@ -1,8 +1,8 @@
 /**
  * 剑指 Offer 30. 包含min函数的栈
- * 
+ *
  * 定义栈的数据结构，请在该类型中实现一个能够得到栈的最小元素的 min 函数在该栈中，调用 min、push 及 pop 的时间复杂度都是 O(1)。
- * 
+ *
  * @example 示例:
  * MinStack minStack = new MinStack();
  * minStack.push(-2);
@@ -12,10 +12,10 @@
  * minStack.pop();
  * minStack.top();      --> 返回 0.
  * minStack.min();   --> 返回 -2.
- * 
+ *
  * 提示：
  * 各函数的调用总次数不超过 20000 次
- * 
+ *
  * @see https://leetcode-cn.com/problems/bao-han-minhan-shu-de-zhan-lcof/
  */
 
@@ -38,11 +38,9 @@
  * 因为栈顶元素入栈的时候的通过 栈顶元素 = 真实值 - 上一个最小的元素 得到的，
  * 而真实值 = min， 因此可以得出上一个最小的元素 = 真实值 -栈顶元素
  * 2.如果栈顶元素大于0，说明它对最小值没有影响，上一个最小值就是上上个最小值。
- * 
+ *
  * 最小栈存储的不应该是真实值，而是真实值和min的差值
  * top的时候涉及到对数据的还原，这里千万注意是上一个最小值
- * 
- * 
  *
  * @export
  * @class MinStack
@@ -92,5 +90,69 @@ export class MinStack {
 
   min(): number | null {
     return this.minValue;
+  }
+}
+
+/**
+ * 辅助栈实现
+ * 辅助栈顶永远存储的是当前最小值
+ *
+ * @export
+ * @class MinStack1
+ */
+export class MinStack1 {
+  /**
+   * 真实栈
+   *
+   * @private
+   * @type {number[]}
+   * @memberof MinStack1
+   */
+  private stack: number[] = [];
+
+  /**
+   * 最小值栈
+   *
+   * @private
+   * @type {number[]}
+   * @memberof MinStack1
+   */
+  private minStack: number[] = []
+
+  push(x: number): void {
+    if (this.stack.length === 0) {
+      this.minStack.push(x);
+      this.stack.push(x);
+      return;
+    }
+
+    const prevMin = this.minStack[this.minStack.length - 1];
+    if (x < prevMin) {
+      this.minStack.push(x);
+    } else {
+      this.minStack.push(prevMin);
+    }
+    this.stack.push(x);
+  }
+
+  pop(): number | null {
+    if (this.stack.length === 0) {
+      return null;
+    }
+
+    this.minStack.pop();
+    return this.stack.pop() as number;
+  }
+
+  top(): number | null {
+    if (this.stack.length === 0) {
+      return null;
+    }
+
+    return this.stack[this.stack.length - 1];
+  }
+
+  min(): number | null {
+    return this.minStack[this.minStack.length - 1];
   }
 }
